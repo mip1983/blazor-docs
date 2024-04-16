@@ -100,11 +100,11 @@ Add the Syncfusion Blazor Media Query component in the **~Pages/.razor** file. I
 
 <SfMediaQuery @bind-ActiveBreakPoint="activeBreakpoint"></SfMediaQuery>
 <br />
-@if (activeBreakpoint == "Small")
+@if (activeBreakpoint == SfMediaQuery.Small.Breakpoint)
 {
     deviceSize = "small-device";
 }
-else if (activeBreakpoint == "Medium")
+else if (activeBreakpoint == SfMediaQuery.Medium.Breakpoint)
 {
     deviceSize = "medium-device";
 }
